@@ -65,14 +65,40 @@
     bottom: 0px;
     height: 10%;
     background: #f0a4df; }
-  .thirdPage .btn {
+  .thirdPage .top-content3 {
     position: absolute;
-    top: 10%;
-    right: 10%;
-    font-size: 50px;
-    padding: 20px;
-    border-radius: 20px;
-    color: #f78a9c;
-    background: #f7e8eb;
-    cursor: pointer;
-    outline: none; }
+    top: 5%;
+    right: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .thirdPage .top-content3 .btn {
+      font-size: 50px;
+      padding: 20px 50px;
+      border-radius: 20px;
+      color: #f78a9c;
+      background: #f7e8eb;
+      cursor: pointer;
+      outline: none; }
+    .thirdPage .top-content3 ul {
+      padding: 20px;
+      list-style: none;
+      color: black; }
+      .thirdPage .top-content3 ul li {
+        padding: 5px;
+        font-size: 40px;
+        animation: shown 1.5s;
+        text-align: center; }
+
+.show {
+  display: block; }
+
+.hidden {
+  display: none; }
+
+@keyframes shown {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
