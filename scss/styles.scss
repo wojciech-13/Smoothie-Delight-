@@ -1,9 +1,7 @@
 * {
     margin: 0;
 }
-body {
 
-}
 .mainPage {
     background: url('../images/background.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -23,14 +21,14 @@ body {
     height: 100vh;
     .top-content {
         padding-top: 30px;
-        height: 15%;
         font-size: 60px;
         text-align: center;
     }
 
     .middle-content {
-        height: 100%;
         display: flex;
+        margin-top: 30px;
+        margin-bottom: 30px;
         .left, .right {
             width: 100%;
             .subtitle {
@@ -43,13 +41,20 @@ body {
                 text-align: justify;
                 color: rgb(211, 43, 43);
             }
+            .side-content1 {
+                margin: 70px;
+                font-size: 30px;
+                text-align: justify;
+                color: rgb(66, 168, 66);
+            }
         }
         .center {
-
+            width: 100%;
+            height: 100%;
                 img{
                     position: center;
                     width: 100%;
-                    height:90%;
+                    height: 100%;
                 }
         }
     }
@@ -58,5 +63,36 @@ body {
         height: 10%;
         background: rgb(129, 34, 34);
     }
+    .bottom-content2 {
+        height: 10%;
+        background: rgb(66, 168, 66);
+    }
 
+}
+.thirdPage {
+    background: url('../images/benefits1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+
+    .bottom-content3{
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+        height: 10%;
+
+        background: rgb(240, 164, 223);
+    }
+    .btn {
+        position: absolute;
+        top: 10%;
+        right: 10%;
+        font-size: 50px;
+        padding: 20px;
+        border-radius: 20px;
+        color: rgb(247, 138, 156);
+        background: rgb(247, 232, 235);
+        cursor: pointer;
+        outline: none;
+    }
 }
