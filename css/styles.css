@@ -1,10 +1,57 @@
 * {
   margin: 0; }
 
+a {
+  display: inline-block;
+  border-radius: 50%; }
+  a .bottom, a .top {
+    display: inline-block;
+    width: 4em;
+    height: 4em;
+    border: 0.5em solid #333;
+    border-radius: 50%;
+    margin: 2px; }
+    a .bottom:hover, a .top:hover {
+      border: 0.5em solid #e74c3c; }
+      a .bottom:hover:after, a .top:hover:after {
+        border-top: 0.5em solid #e74c3c;
+        border-right: 0.5em solid #e74c3c; }
+  a .bottom:after {
+    content: '';
+    display: inline-block;
+    margin-top: 0.7em;
+    margin-left: 1em;
+    width: 1.4em;
+    height: 1.4em;
+    border-top: 0.5em solid #333;
+    border-right: 0.5em solid #333;
+    -moz-transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg); }
+  a .top:after {
+    content: '';
+    display: inline-block;
+    margin-top: 1.3em;
+    margin-left: 1em;
+    width: 1.4em;
+    height: 1.4em;
+    border-top: 0.5em solid #333;
+    border-right: 0.5em solid #333;
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
+
+.navbar {
+  position: absolute;
+  bottom: 2%;
+  display: flex; }
+
 .mainPage {
   background: url("../images/background.jpg") no-repeat center center fixed;
   background-size: cover;
-  height: 100vh; }
+  height: 100vh;
+  display: flex;
+  justify-content: center; }
 
 .title {
   text-align: center;
@@ -14,9 +61,11 @@
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
 
 .secondPage {
+  position: relative;
   display: flex;
   flex-direction: column;
-  height: 100vh; }
+  height: 100vh;
+  align-items: center; }
   .secondPage .top-content {
     padding-top: 30px;
     font-size: 60px;
@@ -31,12 +80,12 @@
         font-size: 50px;
         text-align: center; }
       .secondPage .middle-content .left .side-content, .secondPage .middle-content .right .side-content {
-        margin: 70px;
+        margin: 55px;
         font-size: 30px;
         text-align: justify;
         color: #d32b2b; }
       .secondPage .middle-content .left .side-content1, .secondPage .middle-content .right .side-content1 {
-        margin: 70px;
+        margin: 55px;
         font-size: 30px;
         text-align: justify;
         color: #42a842; }
@@ -46,8 +95,8 @@
       .secondPage .middle-content .center img {
         position: center;
         width: 100%;
-        height: 100%; }
-  .secondPage .bottom-content {
+        height: 90%; }
+  .secondPage .bottom-content1 {
     height: 10%;
     background: #812222; }
   .secondPage .bottom-content2 {
@@ -58,13 +107,10 @@
   background: url("../images/benefits1.jpg") no-repeat center center fixed;
   background-size: cover;
   height: 100vh;
-  position: relative; }
-  .thirdPage .bottom-content3 {
-    position: absolute;
-    width: 100%;
-    bottom: 0px;
-    height: 10%;
-    background: #f0a4df; }
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
   .thirdPage .top-content3 {
     position: absolute;
     top: 5%;
@@ -107,7 +153,10 @@
 .form-page {
   background: url("../images/formi.jpg") no-repeat center center fixed;
   background-size: cover;
-  height: 100vh; }
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center; }
   .form-page h2 {
     padding: 20px;
     text-align: center; }
