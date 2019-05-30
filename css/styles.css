@@ -1,9 +1,15 @@
 * {
   margin: 0; }
 
+html {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none; }
+
 a {
   display: inline-block;
-  border-radius: 50%; }
+  border-radius: 50%;
+  cursor: pointer; }
   a .bottom, a .top {
     display: inline-block;
     width: 4em;
@@ -95,13 +101,7 @@ a {
       .secondPage .middle-content .center img {
         position: center;
         width: 100%;
-        height: 90%; }
-  .secondPage .bottom-content1 {
-    height: 10%;
-    background: #812222; }
-  .secondPage .bottom-content2 {
-    height: 10%;
-    background: #42a842; }
+        height: 80%; }
 
 .thirdPage {
   background: url("../images/benefits1.jpg") no-repeat center center fixed;

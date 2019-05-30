@@ -2,9 +2,17 @@
     margin: 0;
 }
 
+html {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    // overflow: hidden;
+    -ms-overflow-style: none;
+}
+
 a {
     display: inline-block;
     border-radius: 50%;
+    cursor: pointer;
     .bottom, .top {
         display: inline-block;
         width: 4em;
@@ -111,18 +119,9 @@ a {
                 img{
                     position: center;
                     width: 100%;
-                    height: 90%;
+                    height: 80%;
                 }
         }
-    }
-
-    .bottom-content1 {
-        height: 10%;
-        background: rgb(129, 34, 34);
-    }
-    .bottom-content2 {
-        height: 10%;
-        background: rgb(66, 168, 66);
     }
 
 }
