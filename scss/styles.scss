@@ -3,9 +3,7 @@
 }
 
 html {
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    // overflow: hidden;
+    overflow: hidden;
     -ms-overflow-style: none;
 }
 
@@ -60,7 +58,26 @@ a {
     position: absolute;
     bottom: 2%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    .navNums{
+        display: flex;
+        .navNum{
+            font-size: 40px;
+            font-family: sans-serif;
+            font-weight: bold;
+            margin: 10px;
+            color: #333;
+        }
+        .active {
+            color: #e74c3c;
+        }
+    }
+    .navArrows{
+        display: flex;
+    }
 }
+
 
 
 .mainPage {
@@ -228,4 +245,3 @@ a {
     }
 }
 
-// //////////////////////////////////////////////////////////////
