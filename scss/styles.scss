@@ -11,6 +11,7 @@ a {
     display: inline-block;
     border-radius: 50%;
     cursor: pointer;
+    text-decoration: none;
     .bottom, .top {
         display: inline-block;
         width: 4em;
@@ -136,7 +137,7 @@ a {
                 img{
                     position: center;
                     width: 100%;
-                    height: 80%;
+                    height: 85%;
                 }
         }
     }
@@ -190,7 +191,7 @@ a {
 .show {
     display: block;
 }
-.hidden {
+.hide{
     display: none;
 }
 
@@ -198,6 +199,7 @@ a {
     0% { opacity: 0; }
     100% { opacity: 1; }
 }
+
 .form-page {
     background: url('../images/formi.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -210,38 +212,53 @@ a {
         padding: 20px;
         text-align: center;
     }
-    form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        input {
-            border: 0px;
-            width: 25%;
+    .messageContainer {
+        animation: shown 1.5s;
+        div {
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 5px;
-            background: rgba(54, 55, 59, 0.8);
-            color: #BFD2FF;
-            font-size: 17px;
-            outline: none;
-            padding: 10px;
-            border-radius: 2px;
-            &::placeholder{
-                text-align: center;
-                color: rgb(160, 163, 175);
-            }
-        }
-        .submitBtn {
-            font-size: 17px;
-            padding: 10px;
-            border-radius: 2px;
-            background: rgba(41, 61, 138, 0.8);
-            color: white;
-            border: 1px solid rgb(235, 230, 230);
-            min-width: 10%;
+            font-size: 30px;
+            font-family: sans-serif cursive;
+            font-weight: bold;
         }
     }
+    .formContainer {
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            input {
+                border: 0px;
+                width: 25%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 5px;
+                background: rgba(54, 55, 59, 0.8);
+                color: #BFD2FF;
+                font-size: 17px;
+                outline: none;
+                padding: 10px;
+                border-radius: 2px;
+                &::placeholder{
+                    text-align: center;
+                    color: rgb(160, 163, 175);
+                }
+            }
+            .submitBtn {
+                font-size: 17px;
+                padding: 10px;
+                border-radius: 2px;
+                background: rgba(41, 61, 138, 0.8);
+                color: white;
+                border: 1px solid rgb(235, 230, 230);
+                min-width: 10%;
+            }
+        }
+    }
+
 }
 

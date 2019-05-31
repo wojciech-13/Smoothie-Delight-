@@ -8,7 +8,8 @@ html {
 a {
   display: inline-block;
   border-radius: 50%;
-  cursor: pointer; }
+  cursor: pointer;
+  text-decoration: none; }
   a .bottom, a .top {
     display: inline-block;
     width: 4em;
@@ -114,7 +115,7 @@ a {
       .secondPage .middle-content .center img {
         position: center;
         width: 100%;
-        height: 80%; }
+        height: 85%; }
 
 .thirdPage {
   background: url("../images/benefits1.jpg") no-repeat center center fixed;
@@ -154,7 +155,7 @@ a {
 .show {
   display: block; }
 
-.hidden {
+.hide {
   display: none; }
 
 @keyframes shown {
@@ -173,12 +174,21 @@ a {
   .form-page h2 {
     padding: 20px;
     text-align: center; }
-  .form-page form {
+  .form-page .messageContainer {
+    animation: shown 1.5s; }
+    .form-page .messageContainer div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      font-family: sans-serif cursive;
+      font-weight: bold; }
+  .form-page .formContainer form {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center; }
-    .form-page form input {
+    .form-page .formContainer form input {
       border: 0px;
       width: 25%;
       display: flex;
@@ -191,10 +201,10 @@ a {
       outline: none;
       padding: 10px;
       border-radius: 2px; }
-      .form-page form input::placeholder {
+      .form-page .formContainer form input::placeholder {
         text-align: center;
         color: #a0a3af; }
-    .form-page form .submitBtn {
+    .form-page .formContainer form .submitBtn {
       font-size: 17px;
       padding: 10px;
       border-radius: 2px;
