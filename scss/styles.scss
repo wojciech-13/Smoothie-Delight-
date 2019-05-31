@@ -214,6 +214,7 @@ a {
     }
     .messageContainer {
         animation: shown 1.5s;
+        margin-top: 50px;
         div {
             display: flex;
             align-items: center;
@@ -224,7 +225,7 @@ a {
         }
     }
     .formContainer {
-
+        margin-top: 20px;
         form {
             display: flex;
             flex-direction: column;
