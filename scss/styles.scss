@@ -6,6 +6,7 @@ $flex-row: row;
 $flex-column: column;
 $full-height: 100vh;
 
+// fonts
 $font-xs: 17px;
 $font-s: 25px;
 $font-m: 30px;
@@ -95,7 +96,6 @@ html {
         flex-direction: $flex-row;
         align-items: center;
         justify-content: center;
-
         .top-content3 {
             position: absolute;
             top: 5%;
@@ -105,26 +105,17 @@ html {
             align-items: center;
             justify-content: center;
             .btn {
-                // font-size: $font-xl;
-                // padding: 20px 50px ;
-                // border-radius: 20px;
-                // color: rgb(77, 0, 0);
-                // background: rgb(131, 172, 175);
-                // cursor: pointer;
-                // outline: none;
-                
-                
                 background-color:#e6dddd;
                 -moz-border-radius:10px;
                 -webkit-border-radius:10px;
                 border-radius:10px;
-                border:3px solid #472727;
+                border:2px solid #472727;
                 display:inline-block;
                 cursor:pointer;
                 color:#472727;
                 font-family:Arial;
                 font-size: $font-xl;
-                padding:8px 36px;
+                padding:8px 37px;
                 text-decoration:none;
                 text-shadow:0px 1px 0px #d6d2d2;
                 outline: none;
@@ -149,7 +140,6 @@ html {
                 }
             }
         }
-
     }
 
     // Form Page
@@ -215,7 +205,6 @@ html {
                 }
             }
         }
-
     }
     //Other 
     .navbar {

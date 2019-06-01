@@ -8,7 +8,7 @@ function showBenefits() {
     setTimeout(function(){
         list.classList.remove('hide');
         list.classList.add('show');
-    },1000)
+    },500)
     setTimeout(function(){
         list.classList.remove('show');
         list.classList.add('hide');
