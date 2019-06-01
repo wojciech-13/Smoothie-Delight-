@@ -1,8 +1,8 @@
 const list = document.querySelector('.list');
 const btn = document.querySelector('.btn');
-const submitBtn = document.querySelector('.submitBtn');
-const formContainer = document.querySelector('.formContainer');
-const messageContainer = document.querySelector('.messageContainer');
+const submitBtn = document.querySelector('.submit-btn');
+const formContainer = document.querySelector('.form-container');
+const messageContainer = document.querySelector('.message-container');
 
 function showBenefits() {
     setTimeout(function(){

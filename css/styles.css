@@ -4,214 +4,217 @@
 html {
   overflow: hidden;
   -ms-overflow-style: none; }
-
-a {
-  display: inline-block;
-  border-radius: 50%;
-  cursor: pointer;
-  text-decoration: none; }
-  a .bottom, a .top {
-    display: inline-block;
-    width: 4em;
-    height: 4em;
-    border: 0.5em solid #333;
-    border-radius: 50%;
-    margin: 2px; }
-    a .bottom:hover, a .top:hover {
-      border: 0.5em solid #e74c3c; }
-      a .bottom:hover:after, a .top:hover:after {
-        border-top: 0.5em solid #e74c3c;
-        border-right: 0.5em solid #e74c3c; }
-  a .bottom:after {
-    content: '';
-    display: inline-block;
-    margin-top: 0.7em;
-    margin-left: 1em;
-    width: 1.4em;
-    height: 1.4em;
-    border-top: 0.5em solid #333;
-    border-right: 0.5em solid #333;
-    -moz-transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-    transform: rotate(135deg); }
-  a .top:after {
-    content: '';
-    display: inline-block;
-    margin-top: 1.3em;
-    margin-left: 1em;
-    width: 1.4em;
-    height: 1.4em;
-    border-top: 0.5em solid #333;
-    border-right: 0.5em solid #333;
-    -moz-transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg); }
-
-.navbar {
-  position: absolute;
-  bottom: 2%;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .navbar .navNums {
-    display: flex; }
-    .navbar .navNums .navNum {
-      font-size: 40px;
-      font-family: sans-serif;
-      font-weight: bold;
-      margin: 10px;
-      color: #333; }
-    .navbar .navNums .active {
-      color: #e74c3c; }
-  .navbar .navArrows {
-    display: flex; }
-
-.mainPage {
-  background: url("../images/background.jpg") no-repeat center center fixed;
-  background-size: cover;
-  height: 100vh;
-  display: flex;
-  justify-content: center; }
-
-.title {
-  text-align: center;
-  padding: 50px 0px;
-  font-size: 50px;
-  color: #30646e;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
-
-.secondPage {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  align-items: center; }
-  .secondPage .top-content {
-    padding-top: 30px;
-    font-size: 60px;
-    text-align: center; }
-  .secondPage .middle-content {
+  html .main-page {
+    background: url("../images/background.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
     display: flex;
-    margin-top: 30px;
-    margin-bottom: 30px; }
-    .secondPage .middle-content .left, .secondPage .middle-content .right {
-      width: 100%; }
-      .secondPage .middle-content .left .subtitle, .secondPage .middle-content .right .subtitle {
-        font-size: 50px;
-        text-align: center; }
-      .secondPage .middle-content .left .side-content, .secondPage .middle-content .right .side-content {
-        margin: 55px;
-        font-size: 30px;
-        text-align: justify;
-        color: #d32b2b; }
-      .secondPage .middle-content .left .side-content1, .secondPage .middle-content .right .side-content1 {
-        margin: 55px;
-        font-size: 30px;
-        text-align: justify;
-        color: #42a842; }
-    .secondPage .middle-content .center {
-      width: 100%;
-      height: 100%; }
-      .secondPage .middle-content .center img {
-        position: center;
-        width: 100%;
-        height: 85%; }
-
-.thirdPage {
-  background: url("../images/benefits1.jpg") no-repeat center center fixed;
-  background-size: cover;
-  height: 100vh;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-  .thirdPage .top-content3 {
-    position: absolute;
-    top: 5%;
-    right: 5%;
+    flex-direction: row;
+    justify-content: center; }
+    html .main-page .title {
+      text-align: center;
+      padding: 50px 0px;
+      font-size: 50px;
+      color: #30646e;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
+  html .second-page {
+    position: relative;
     display: flex;
     flex-direction: column;
+    height: 100vh;
+    align-items: center; }
+    html .second-page .top-content {
+      padding-top: 30px;
+      font-size: 50px;
+      text-align: center; }
+    html .second-page .middle-content {
+      display: flex;
+      flex-direction: row;
+      margin-top: 30px;
+      margin-bottom: 30px; }
+      html .second-page .middle-content .left, html .second-page .middle-content .right {
+        width: 100%; }
+        html .second-page .middle-content .left .subtitle, html .second-page .middle-content .right .subtitle {
+          font-size: 37px;
+          text-align: center; }
+        html .second-page .middle-content .left .side-content, html .second-page .middle-content .right .side-content {
+          margin: 55px;
+          font-size: 25px;
+          font-family: sans-serif;
+          font-style: italic;
+          text-align: center;
+          color: #d32b2b; }
+        html .second-page .middle-content .left .side-content1, html .second-page .middle-content .right .side-content1 {
+          margin: 55px;
+          font-size: 25px;
+          font-family: sans-serif;
+          font-style: italic;
+          text-align: center;
+          color: #42a842; }
+      html .second-page .middle-content .center {
+        width: 100%;
+        height: 100%; }
+        html .second-page .middle-content .center img {
+          position: center;
+          width: 100%;
+          height: 85%; }
+  html .third-page {
+    background: url("../images/benefits1.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center; }
-    .thirdPage .top-content3 .btn {
-      font-size: 50px;
-      padding: 20px 50px;
-      border-radius: 20px;
-      color: #f78a9c;
-      background: #f7e8eb;
-      cursor: pointer;
-      outline: none; }
-    .thirdPage .top-content3 ul {
+    html .third-page .top-content3 {
+      position: absolute;
+      top: 5%;
+      right: 5%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      html .third-page .top-content3 .btn {
+        font-size: 50px;
+        padding: 20px 50px;
+        border-radius: 20px;
+        color: #f78a9c;
+        background: #f7e8eb;
+        cursor: pointer;
+        outline: none; }
+      html .third-page .top-content3 ul {
+        padding: 20px;
+        list-style: none;
+        color: black; }
+        html .third-page .top-content3 ul li {
+          padding: 5px;
+          font-size: 37px;
+          animation: shown 1.5s;
+          text-align: center;
+          animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86); }
+  html .form-page {
+    background: url("../images/formi.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    html .form-page h2 {
       padding: 20px;
-      list-style: none;
-      color: black; }
-      .thirdPage .top-content3 ul li {
-        padding: 5px;
-        font-size: 40px;
-        animation: shown 1.5s;
-        text-align: center;
-        animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86); }
-
-.show {
-  display: block; }
-
-.hide {
-  display: none; }
+      text-align: center; }
+    html .form-page .message-container {
+      animation: shown 1.5s;
+      margin-top: 50px; }
+      html .form-page .message-container div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        font-family: sans-serif cursive;
+        font-weight: bold; }
+    html .form-page .form-container {
+      margin-top: 20px; }
+      html .form-page .form-container form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; }
+        html .form-page .form-container form input {
+          border: 0px;
+          width: 25%;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          margin: 5px;
+          background: rgba(54, 55, 59, 0.8);
+          color: #BFD2FF;
+          font-size: 17px;
+          outline: none;
+          padding: 10px;
+          border-radius: 2px; }
+          html .form-page .form-container form input::placeholder {
+            text-align: center;
+            color: #a0a3af; }
+        html .form-page .form-container form .submit-btn {
+          font-size: 17px;
+          padding: 10px;
+          border-radius: 2px;
+          background: rgba(41, 61, 138, 0.8);
+          color: white;
+          border: 1px solid #ebe6e6;
+          min-width: 10%; }
+  html .navbar {
+    position: absolute;
+    bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    html .navbar .navNums {
+      display: flex;
+      flex-direction: row; }
+      html .navbar .navNums .navNum {
+        font-size: 37px;
+        font-family: sans-serif;
+        font-weight: bold;
+        margin: 10px;
+        color: #333; }
+      html .navbar .navNums .active {
+        color: #e74c3c; }
+    html .navbar .navArrows {
+      display: flex;
+      flex-direction: row; }
+  html a {
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+    text-decoration: none; }
+    html a .bottom, html a .top {
+      display: inline-block;
+      width: 4em;
+      height: 4em;
+      border: 0.5em solid #333;
+      border-radius: 50%;
+      margin: 2px; }
+      html a .bottom:hover, html a .top:hover {
+        border: 0.5em solid #e74c3c; }
+        html a .bottom:hover:after, html a .top:hover:after {
+          border-top: 0.5em solid #e74c3c;
+          border-right: 0.5em solid #e74c3c; }
+    html a .bottom:after {
+      content: '';
+      display: inline-block;
+      margin-top: 0.7em;
+      margin-left: 1em;
+      width: 1.4em;
+      height: 1.4em;
+      border-top: 0.5em solid #333;
+      border-right: 0.5em solid #333;
+      -moz-transform: rotate(135deg);
+      -webkit-transform: rotate(135deg);
+      transform: rotate(135deg); }
+    html a .top:after {
+      content: '';
+      display: inline-block;
+      margin-top: 1.3em;
+      margin-left: 1em;
+      width: 1.4em;
+      height: 1.4em;
+      border-top: 0.5em solid #333;
+      border-right: 0.5em solid #333;
+      -moz-transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg); }
+  html .show {
+    display: block; }
+  html .hide {
+    display: none; }
 
 @keyframes shown {
   0% {
     opacity: 0; }
   100% {
     opacity: 1; } }
-
-.form-page {
-  background: url("../images/formi.jpg") no-repeat center center fixed;
-  background-size: cover;
-  height: 100vh;
-  position: relative;
-  display: flex;
-  justify-content: center; }
-  .form-page h2 {
-    padding: 20px;
-    text-align: center; }
-  .form-page .messageContainer {
-    animation: shown 1.5s;
-    margin-top: 50px; }
-    .form-page .messageContainer div {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 30px;
-      font-family: sans-serif cursive;
-      font-weight: bold; }
-  .form-page .formContainer {
-    margin-top: 20px; }
-    .form-page .formContainer form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center; }
-      .form-page .formContainer form input {
-        border: 0px;
-        width: 25%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 5px;
-        background: rgba(54, 55, 59, 0.8);
-        color: #BFD2FF;
-        font-size: 17px;
-        outline: none;
-        padding: 10px;
-        border-radius: 2px; }
-        .form-page .formContainer form input::placeholder {
-          text-align: center;
-          color: #a0a3af; }
-      .form-page .formContainer form .submitBtn {
-        font-size: 17px;
-        padding: 10px;
-        border-radius: 2px;
-        background: rgba(41, 61, 138, 0.8);
-        color: white;
-        border: 1px solid #ebe6e6;
-        min-width: 10%; }
