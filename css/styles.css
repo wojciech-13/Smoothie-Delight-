@@ -35,7 +35,7 @@ html {
       html .second-page .middle-content .left, html .second-page .middle-content .right {
         width: 100%; }
         html .second-page .middle-content .left .subtitle, html .second-page .middle-content .right .subtitle {
-          font-size: 37px;
+          font-size: 36px;
           text-align: center; }
         html .second-page .middle-content .left .side-content, html .second-page .middle-content .right .side-content {
           margin: 55px;
@@ -76,20 +76,32 @@ html {
       align-items: center;
       justify-content: center; }
       html .third-page .top-content3 .btn {
-        font-size: 50px;
-        padding: 20px 50px;
-        border-radius: 20px;
-        color: #f78a9c;
-        background: #f7e8eb;
+        background-color: #e6dddd;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        border: 3px solid #472727;
+        display: inline-block;
         cursor: pointer;
+        color: #472727;
+        font-family: Arial;
+        font-size: 50px;
+        padding: 8px 36px;
+        text-decoration: none;
+        text-shadow: 0px 1px 0px #d6d2d2;
         outline: none; }
+        html .third-page .top-content3 .btn:hover {
+          background-color: #d8caca; }
+        html .third-page .top-content3 .btn:active {
+          position: relative;
+          top: 1px; }
       html .third-page .top-content3 ul {
-        padding: 20px;
+        padding: 18px;
         list-style: none;
-        color: black; }
+        color: #472727; }
         html .third-page .top-content3 ul li {
           padding: 5px;
-          font-size: 37px;
+          font-size: 36px;
           animation: shown 1.5s;
           text-align: center;
           animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86); }
@@ -157,7 +169,7 @@ html {
       display: flex;
       flex-direction: row; }
       html .navbar .navNums .navNum {
-        font-size: 37px;
+        font-size: 36px;
         font-family: sans-serif;
         font-weight: bold;
         margin: 10px;
