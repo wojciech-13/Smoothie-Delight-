@@ -61,7 +61,7 @@ html {
                     font-size: $font-s;
                     font-family: sans-serif;
                     font-style: italic;
-                    
+
                     text-align: center;
                     color: rgb(211, 43, 43);
                 }
@@ -206,7 +206,7 @@ html {
             }
         }
     }
-    //Other 
+    //Other
     .navbar {
         position: absolute;
         bottom: 2%;
@@ -221,10 +221,15 @@ html {
                 font-family: sans-serif;
                 font-weight: bold;
                 margin: 10px;
-                color: #333;
             }
             .active {
-                color: #e74c3c;
+                color: #5fce05;
+            }
+            .inactive {
+                color: #333;
+                &:hover{
+                    color: #e74c3c;
+                }
             }
         }
         .navArrows{

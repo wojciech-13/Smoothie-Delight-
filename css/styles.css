@@ -172,10 +172,13 @@ html {
         font-size: 36px;
         font-family: sans-serif;
         font-weight: bold;
-        margin: 10px;
-        color: #333; }
+        margin: 10px; }
       html .navbar .navNums .active {
-        color: #e74c3c; }
+        color: #5fce05; }
+      html .navbar .navNums .inactive {
+        color: #333; }
+        html .navbar .navNums .inactive:hover {
+          color: #e74c3c; }
     html .navbar .navArrows {
       display: flex;
       flex-direction: row; }
